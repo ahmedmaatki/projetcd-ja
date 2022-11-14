@@ -1,3 +1,4 @@
----
+- name: tag 
+  shell: docker tag devops:latest preyz/devops:latest
 - name: push image to dockerhub
   shell: docker push preyz/devops:latest
