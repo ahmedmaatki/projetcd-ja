@@ -1,3 +1,6 @@
-- name: push image to dockerhub
+- name: tag image
+  become: yes
+  shell: docker tag preyz/devops preyz/devops:latest
+  - name: push image to dockerhub
   become: yes
   shell: docker push preyz/devops:latest
