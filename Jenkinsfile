@@ -31,7 +31,7 @@ pipeline
             }
         }
 
-        stage('Building docker image and running container') {
+        stage('Building docker image and running the container') {
             steps {
                 script {
                     sh ' ansible-playbook ansible/docker.yml -i ansible/inventory/host.yml '
