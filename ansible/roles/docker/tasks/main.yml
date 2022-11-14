@@ -9,11 +9,11 @@
     source: build
     state: present
     force_source: true
-- name: run container docker
+- name: run docker container
   docker_container:
     name: devops_container
     image: devops:latest
     state: started
     recreate: true
     ports:
-     - "4202:80"
+     - "4203:80"
