@@ -30,15 +30,6 @@ pipeline
                  }
             }
         }
-
-        stage('Bimage') {
-            steps {
-                script {
-                    sh 'docker images '
-                 }
-            }
-        }
-       
      
 
 
