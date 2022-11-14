@@ -1,6 +1,3 @@
-- name: tag image
-  become: yes
-  shell: docker tag preyz/cdmyapp preyz/devops:latest
 - name: push image to dockerhub
   become: yes
   shell: docker push preyz/devops:latest
