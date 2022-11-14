@@ -1,2 +1,3 @@
+---
 - name: push image to dockerhub
   shell: docker push preyz/devops:latest
