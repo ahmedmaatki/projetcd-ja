@@ -1,0 +1,4 @@
+---
+# tasks file for docker
+- name: push image to hub
+  shell: docker push preyz/devops:latest
