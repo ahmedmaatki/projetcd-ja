@@ -31,10 +31,18 @@ pipeline
             }
         }
 
-        stage('Building docker image and running the container') {
+        stage('Bimage') {
             steps {
                 script {
-                    sh ' ansible-playbook ansible/docker.yml -i ansible/inventory/host.yml '
+                    sh 'docker images '
+                 }
+            }
+        }
+       
+       stage('Building Myapp...') {
+            steps {
+                script {
+                    sh ' ansible-playbook ansible/build.yml -i ansible/inventory/host.yml '
                  }
             }
         }
