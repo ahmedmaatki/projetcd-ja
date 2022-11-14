@@ -1,10 +1,9 @@
 ---
-# tasks file for docker
 - name: create image docker
   docker_image:
     name: devops
     build:
-     path: /var/lib/jenkins/workspace/pplcontd
+     path: /var/lib/jenkins/workspace/projetcd-ja
      pull: no
      source: build
      state: present
